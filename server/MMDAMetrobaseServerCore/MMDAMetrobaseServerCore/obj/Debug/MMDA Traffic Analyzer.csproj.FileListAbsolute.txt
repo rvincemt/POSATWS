@@ -1,0 +1,95 @@
+C:\Users\Rod Vincent\documents\visual studio 2013\Projects\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\MMDA Traffic Analyzer.csprojResolveAssemblyReference.cache
+C:\Users\Rod Vincent\documents\visual studio 2013\Projects\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Login.resources
+C:\Users\Rod Vincent\documents\visual studio 2013\Projects\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Main.resources
+C:\Users\Rod Vincent\documents\visual studio 2013\Projects\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\Rod Vincent\documents\visual studio 2013\Projects\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\MMDA Traffic Analyzer.csproj.GenerateResource.Cache
+C:\Users\Rod Vincent\documents\visual studio 2013\Projects\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+C:\Users\Rod Vincent\documents\visual studio 2013\Projects\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+C:\Users\Rod Vincent\documents\visual studio 2013\Projects\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Users\Rod Vincent\documents\visual studio 2013\Projects\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+C:\Users\Rod Vincent\documents\visual studio 2013\Projects\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+C:\Users\Rod Vincent\documents\visual studio 2013\Projects\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\GMaps.dll
+C:\Users\Rod Vincent\Documents\Visual Studio 2013\Projects\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.CameraManage.resources
+C:\Users\Rod Vincent\Documents\Visual Studio 2013\Projects\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Form1.resources
+C:\Users\Rod Vincent\Documents\Visual Studio 2013\Projects\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.SensorManage.resources
+C:\Users\Rod Vincent\Documents\Visual Studio 2013\Projects\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormApplication1.SensorServer.resources
+C:\Users\Rod Vincent\Documents\Visual Studio 2013\Projects\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.RoadManage.resources
+G:\Git\AutomatedTrafficWarningSystem\server\MMDAMetrobaseServerCore\MMDAMetrobaseServerCore\bin\Debug\WindowsFormsApplication1.exe.config
+G:\Git\AutomatedTrafficWarningSystem\server\MMDAMetrobaseServerCore\MMDAMetrobaseServerCore\obj\Debug\WindowsFormsApplication1.exe
+G:\Git\AutomatedTrafficWarningSystem\server\MMDAMetrobaseServerCore\MMDAMetrobaseServerCore\obj\Debug\WindowsFormsApplication1.pdb
+G:\Git\AutomatedTrafficWarningSystem\server\MMDAMetrobaseServerCore\MMDAMetrobaseServerCore\bin\Debug\WindowsFormsApplication1.exe
+G:\Git\AutomatedTrafficWarningSystem\server\MMDAMetrobaseServerCore\MMDAMetrobaseServerCore\bin\Debug\WindowsFormsApplication1.pdb
+G:\Git\AutomatedTrafficWarningSystem\server\MMDAMetrobaseServerCore\MMDAMetrobaseServerCore\bin\Debug\GMaps.dll
+G:\Git\AutomatedTrafficWarningSystem\server\MMDAMetrobaseServerCore\MMDAMetrobaseServerCore\obj\Debug\WindowsFormsApplication1.RoadManage.resources
+G:\Git\AutomatedTrafficWarningSystem\server\MMDAMetrobaseServerCore\MMDAMetrobaseServerCore\obj\Debug\WindowsFormsApplication1.SensorManage.resources
+G:\Git\AutomatedTrafficWarningSystem\server\MMDAMetrobaseServerCore\MMDAMetrobaseServerCore\obj\Debug\WindowsFormsApplication1.CameraManage.resources
+G:\Git\AutomatedTrafficWarningSystem\server\MMDAMetrobaseServerCore\MMDAMetrobaseServerCore\obj\Debug\WindowsFormsApplication1.Login.resources
+G:\Git\AutomatedTrafficWarningSystem\server\MMDAMetrobaseServerCore\MMDAMetrobaseServerCore\obj\Debug\WindowsFormsApplication1.Main.resources
+G:\Git\AutomatedTrafficWarningSystem\server\MMDAMetrobaseServerCore\MMDAMetrobaseServerCore\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+G:\Git\AutomatedTrafficWarningSystem\server\MMDAMetrobaseServerCore\MMDAMetrobaseServerCore\obj\Debug\WindowsFormApplication1.SensorServer.resources
+G:\Git\AutomatedTrafficWarningSystem\server\MMDAMetrobaseServerCore\MMDAMetrobaseServerCore\obj\Debug\MMDA Traffic Analyzer.csproj.GenerateResource.Cache
+G:\Git\AutomatedTrafficWarningSystem\server\MMDAMetrobaseServerCore\MMDAMetrobaseServerCore\bin\Debug\Emgu.CV.DebuggerVisualizers.VS2008.dll
+G:\Git\AutomatedTrafficWarningSystem\server\MMDAMetrobaseServerCore\MMDAMetrobaseServerCore\bin\Debug\Emgu.CV.DebuggerVisualizers.VS2010.dll
+G:\Git\AutomatedTrafficWarningSystem\server\MMDAMetrobaseServerCore\MMDAMetrobaseServerCore\bin\Debug\Emgu.CV.DebuggerVisualizers.VS2012.dll
+G:\Git\AutomatedTrafficWarningSystem\server\MMDAMetrobaseServerCore\MMDAMetrobaseServerCore\bin\Debug\Emgu.CV.dll
+G:\Git\AutomatedTrafficWarningSystem\server\MMDAMetrobaseServerCore\MMDAMetrobaseServerCore\bin\Debug\Emgu.CV.GPU.dll
+G:\Git\AutomatedTrafficWarningSystem\server\MMDAMetrobaseServerCore\MMDAMetrobaseServerCore\bin\Debug\Emgu.CV.ML.dll
+G:\Git\AutomatedTrafficWarningSystem\server\MMDAMetrobaseServerCore\MMDAMetrobaseServerCore\bin\Debug\Emgu.CV.OCR.dll
+G:\Git\AutomatedTrafficWarningSystem\server\MMDAMetrobaseServerCore\MMDAMetrobaseServerCore\bin\Debug\Emgu.CV.OpenCL.dll
+G:\Git\AutomatedTrafficWarningSystem\server\MMDAMetrobaseServerCore\MMDAMetrobaseServerCore\bin\Debug\Emgu.CV.Stitching.dll
+G:\Git\AutomatedTrafficWarningSystem\server\MMDAMetrobaseServerCore\MMDAMetrobaseServerCore\bin\Debug\Emgu.CV.UI.dll
+G:\Git\AutomatedTrafficWarningSystem\server\MMDAMetrobaseServerCore\MMDAMetrobaseServerCore\bin\Debug\Emgu.CV.VideoStab.dll
+G:\Git\AutomatedTrafficWarningSystem\server\MMDAMetrobaseServerCore\MMDAMetrobaseServerCore\bin\Debug\Emgu.Util.dll
+G:\Git\AutomatedTrafficWarningSystem\server\MMDAMetrobaseServerCore\MMDAMetrobaseServerCore\bin\Debug\ZedGraph.dll
+G:\Git\AutomatedTrafficWarningSystem\server\MMDAMetrobaseServerCore\MMDAMetrobaseServerCore\bin\Debug\Emgu.CV.xml
+G:\Git\AutomatedTrafficWarningSystem\server\MMDAMetrobaseServerCore\MMDAMetrobaseServerCore\bin\Debug\Emgu.CV.GPU.xml
+G:\Git\AutomatedTrafficWarningSystem\server\MMDAMetrobaseServerCore\MMDAMetrobaseServerCore\bin\Debug\Emgu.CV.ML.xml
+G:\Git\AutomatedTrafficWarningSystem\server\MMDAMetrobaseServerCore\MMDAMetrobaseServerCore\bin\Debug\Emgu.CV.OCR.xml
+G:\Git\AutomatedTrafficWarningSystem\server\MMDAMetrobaseServerCore\MMDAMetrobaseServerCore\bin\Debug\Emgu.CV.OpenCL.xml
+G:\Git\AutomatedTrafficWarningSystem\server\MMDAMetrobaseServerCore\MMDAMetrobaseServerCore\bin\Debug\Emgu.CV.Stitching.xml
+G:\Git\AutomatedTrafficWarningSystem\server\MMDAMetrobaseServerCore\MMDAMetrobaseServerCore\bin\Debug\Emgu.CV.UI.xml
+G:\Git\AutomatedTrafficWarningSystem\server\MMDAMetrobaseServerCore\MMDAMetrobaseServerCore\bin\Debug\Emgu.CV.VideoStab.xml
+G:\Git\AutomatedTrafficWarningSystem\server\MMDAMetrobaseServerCore\MMDAMetrobaseServerCore\bin\Debug\Emgu.Util.xml
+G:\Git\AutomatedTrafficWarningSystem\server\MMDAMetrobaseServerCore\MMDAMetrobaseServerCore\obj\Debug\WindowsFormsApplication1.CameraAnalysis.resources
+G:\Git\AutomatedTrafficWarningSystem\server\MMDAMetrobaseServerCore\MMDAMetrobaseServerCore\bin\Debug\Emgu.CV.pdb
+G:\Git\AutomatedTrafficWarningSystem\server\MMDAMetrobaseServerCore\MMDAMetrobaseServerCore\bin\Debug\Emgu.CV.UI.pdb
+G:\Git\AutomatedTrafficWarningSystem\server\MMDAMetrobaseServerCore\MMDAMetrobaseServerCore\bin\Debug\Emgu.Util.pdb
+G:\Git\AutomatedTrafficWarningSystem\server\MMDAMetrobaseServerCore\MMDAMetrobaseServerCore\bin\Debug\ZedGraph.xml
+G:\Git\AutomatedTrafficWarningSystem\server\MMDAMetrobaseServerCore\MMDAMetrobaseServerCore\bin\Debug\zh-CN\Emgu.CV.UI.resources.dll
+G:\Git\AutomatedTrafficWarningSystem\server\MMDAMetrobaseServerCore\MMDAMetrobaseServerCore\bin\Debug\zh-CN\ZedGraph.resources.dll
+G:\Git\AutomatedTrafficWarningSystem\server\MMDAMetrobaseServerCore\MMDAMetrobaseServerCore\bin\Debug\x86\cvextern.dll
+G:\Git\AutomatedTrafficWarningSystem\server\MMDAMetrobaseServerCore\MMDAMetrobaseServerCore\bin\Debug\x86\opencv_bioinspired290.dll
+G:\Git\AutomatedTrafficWarningSystem\server\MMDAMetrobaseServerCore\MMDAMetrobaseServerCore\bin\Debug\x86\opencv_calib3d290.dll
+G:\Git\AutomatedTrafficWarningSystem\server\MMDAMetrobaseServerCore\MMDAMetrobaseServerCore\bin\Debug\x86\opencv_contrib290.dll
+G:\Git\AutomatedTrafficWarningSystem\server\MMDAMetrobaseServerCore\MMDAMetrobaseServerCore\bin\Debug\x86\opencv_core290.dll
+G:\Git\AutomatedTrafficWarningSystem\server\MMDAMetrobaseServerCore\MMDAMetrobaseServerCore\bin\Debug\x86\opencv_cudev290.dll
+G:\Git\AutomatedTrafficWarningSystem\server\MMDAMetrobaseServerCore\MMDAMetrobaseServerCore\bin\Debug\x86\opencv_features2d290.dll
+G:\Git\AutomatedTrafficWarningSystem\server\MMDAMetrobaseServerCore\MMDAMetrobaseServerCore\bin\Debug\x86\opencv_ffmpeg290.dll
+G:\Git\AutomatedTrafficWarningSystem\server\MMDAMetrobaseServerCore\MMDAMetrobaseServerCore\bin\Debug\x86\opencv_flann290.dll
+G:\Git\AutomatedTrafficWarningSystem\server\MMDAMetrobaseServerCore\MMDAMetrobaseServerCore\bin\Debug\x86\opencv_gpu290.dll
+G:\Git\AutomatedTrafficWarningSystem\server\MMDAMetrobaseServerCore\MMDAMetrobaseServerCore\bin\Debug\x86\opencv_gpuarithm290.dll
+G:\Git\AutomatedTrafficWarningSystem\server\MMDAMetrobaseServerCore\MMDAMetrobaseServerCore\bin\Debug\x86\opencv_gpubgsegm290.dll
+G:\Git\AutomatedTrafficWarningSystem\server\MMDAMetrobaseServerCore\MMDAMetrobaseServerCore\bin\Debug\x86\opencv_gpucodec290.dll
+G:\Git\AutomatedTrafficWarningSystem\server\MMDAMetrobaseServerCore\MMDAMetrobaseServerCore\bin\Debug\x86\opencv_gpufeatures2d290.dll
+G:\Git\AutomatedTrafficWarningSystem\server\MMDAMetrobaseServerCore\MMDAMetrobaseServerCore\bin\Debug\x86\opencv_gpufilters290.dll
+G:\Git\AutomatedTrafficWarningSystem\server\MMDAMetrobaseServerCore\MMDAMetrobaseServerCore\bin\Debug\x86\opencv_gpuimgproc290.dll
+G:\Git\AutomatedTrafficWarningSystem\server\MMDAMetrobaseServerCore\MMDAMetrobaseServerCore\bin\Debug\x86\opencv_gpulegacy290.dll
+G:\Git\AutomatedTrafficWarningSystem\server\MMDAMetrobaseServerCore\MMDAMetrobaseServerCore\bin\Debug\x86\opencv_gpuoptflow290.dll
+G:\Git\AutomatedTrafficWarningSystem\server\MMDAMetrobaseServerCore\MMDAMetrobaseServerCore\bin\Debug\x86\opencv_gpustereo290.dll
+G:\Git\AutomatedTrafficWarningSystem\server\MMDAMetrobaseServerCore\MMDAMetrobaseServerCore\bin\Debug\x86\opencv_gpuwarping290.dll
+G:\Git\AutomatedTrafficWarningSystem\server\MMDAMetrobaseServerCore\MMDAMetrobaseServerCore\bin\Debug\x86\opencv_highgui290.dll
+G:\Git\AutomatedTrafficWarningSystem\server\MMDAMetrobaseServerCore\MMDAMetrobaseServerCore\bin\Debug\x86\opencv_imgproc290.dll
+G:\Git\AutomatedTrafficWarningSystem\server\MMDAMetrobaseServerCore\MMDAMetrobaseServerCore\bin\Debug\x86\opencv_legacy290.dll
+G:\Git\AutomatedTrafficWarningSystem\server\MMDAMetrobaseServerCore\MMDAMetrobaseServerCore\bin\Debug\x86\opencv_ml290.dll
+G:\Git\AutomatedTrafficWarningSystem\server\MMDAMetrobaseServerCore\MMDAMetrobaseServerCore\bin\Debug\x86\opencv_nonfree290.dll
+G:\Git\AutomatedTrafficWarningSystem\server\MMDAMetrobaseServerCore\MMDAMetrobaseServerCore\bin\Debug\x86\opencv_objdetect290.dll
+G:\Git\AutomatedTrafficWarningSystem\server\MMDAMetrobaseServerCore\MMDAMetrobaseServerCore\bin\Debug\x86\opencv_ocl290.dll
+G:\Git\AutomatedTrafficWarningSystem\server\MMDAMetrobaseServerCore\MMDAMetrobaseServerCore\bin\Debug\x86\opencv_optim290.dll
+G:\Git\AutomatedTrafficWarningSystem\server\MMDAMetrobaseServerCore\MMDAMetrobaseServerCore\bin\Debug\x86\opencv_photo290.dll
+G:\Git\AutomatedTrafficWarningSystem\server\MMDAMetrobaseServerCore\MMDAMetrobaseServerCore\bin\Debug\x86\opencv_softcascade290.dll
+G:\Git\AutomatedTrafficWarningSystem\server\MMDAMetrobaseServerCore\MMDAMetrobaseServerCore\bin\Debug\x86\opencv_stitching290.dll
+G:\Git\AutomatedTrafficWarningSystem\server\MMDAMetrobaseServerCore\MMDAMetrobaseServerCore\bin\Debug\x86\opencv_superres290.dll
+G:\Git\AutomatedTrafficWarningSystem\server\MMDAMetrobaseServerCore\MMDAMetrobaseServerCore\bin\Debug\x86\opencv_video290.dll
+G:\Git\AutomatedTrafficWarningSystem\server\MMDAMetrobaseServerCore\MMDAMetrobaseServerCore\bin\Debug\x86\opencv_videostab290.dll
+G:\Git\AutomatedTrafficWarningSystem\server\MMDAMetrobaseServerCore\MMDAMetrobaseServerCore\obj\Debug\MMDA Traffic Analyzer.csprojResolveAssemblyReference.cache
+G:\Git\AutomatedTrafficWarningSystem\server\MMDAMetrobaseServerCore\MMDAMetrobaseServerCore\obj\Debug\WindowsFormsApplication1.CameraAnalysisModule.resources
