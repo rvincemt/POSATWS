@@ -30,10 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.cameraIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.camIPDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.roadIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.camTypeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cameraBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.mmdametrobaseDataSet2 = new WindowsFormsApplication1.mmdametrobaseDataSet2();
             this.cameraBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -58,6 +54,10 @@
             this.txtCamIP = new System.Windows.Forms.TextBox();
             this.txtCamID = new System.Windows.Forms.TextBox();
             this.cameraTableAdapter1 = new WindowsFormsApplication1.mmdametrobaseDataSet2TableAdapters.cameraTableAdapter();
+            this.cameraIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.camIPDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.roadIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.camTypeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cameraBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mmdametrobaseDataSet2)).BeginInit();
@@ -70,7 +70,12 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.cameraIDDataGridViewTextBoxColumn,
@@ -82,36 +87,9 @@
             this.dataGridView1.Location = new System.Drawing.Point(396, 1);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridView1.Size = new System.Drawing.Size(444, 424);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // cameraIDDataGridViewTextBoxColumn
-            // 
-            this.cameraIDDataGridViewTextBoxColumn.DataPropertyName = "cameraID";
-            this.cameraIDDataGridViewTextBoxColumn.HeaderText = "cameraID";
-            this.cameraIDDataGridViewTextBoxColumn.Name = "cameraIDDataGridViewTextBoxColumn";
-            this.cameraIDDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // camIPDataGridViewTextBoxColumn
-            // 
-            this.camIPDataGridViewTextBoxColumn.DataPropertyName = "camIP";
-            this.camIPDataGridViewTextBoxColumn.HeaderText = "camIP";
-            this.camIPDataGridViewTextBoxColumn.Name = "camIPDataGridViewTextBoxColumn";
-            this.camIPDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // roadIDDataGridViewTextBoxColumn
-            // 
-            this.roadIDDataGridViewTextBoxColumn.DataPropertyName = "roadID";
-            this.roadIDDataGridViewTextBoxColumn.HeaderText = "roadID";
-            this.roadIDDataGridViewTextBoxColumn.Name = "roadIDDataGridViewTextBoxColumn";
-            this.roadIDDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // camTypeDataGridViewTextBoxColumn
-            // 
-            this.camTypeDataGridViewTextBoxColumn.DataPropertyName = "camType";
-            this.camTypeDataGridViewTextBoxColumn.HeaderText = "camType";
-            this.camTypeDataGridViewTextBoxColumn.Name = "camTypeDataGridViewTextBoxColumn";
-            this.camTypeDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // cameraBindingSource1
             // 
@@ -310,6 +288,42 @@
             // 
             this.cameraTableAdapter1.ClearBeforeFill = true;
             // 
+            // cameraIDDataGridViewTextBoxColumn
+            // 
+            this.cameraIDDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.cameraIDDataGridViewTextBoxColumn.DataPropertyName = "cameraID";
+            this.cameraIDDataGridViewTextBoxColumn.HeaderText = "cameraID";
+            this.cameraIDDataGridViewTextBoxColumn.Name = "cameraIDDataGridViewTextBoxColumn";
+            this.cameraIDDataGridViewTextBoxColumn.ReadOnly = true;
+            this.cameraIDDataGridViewTextBoxColumn.Width = 78;
+            // 
+            // camIPDataGridViewTextBoxColumn
+            // 
+            this.camIPDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.camIPDataGridViewTextBoxColumn.DataPropertyName = "camIP";
+            this.camIPDataGridViewTextBoxColumn.HeaderText = "camIP";
+            this.camIPDataGridViewTextBoxColumn.Name = "camIPDataGridViewTextBoxColumn";
+            this.camIPDataGridViewTextBoxColumn.ReadOnly = true;
+            this.camIPDataGridViewTextBoxColumn.Width = 62;
+            // 
+            // roadIDDataGridViewTextBoxColumn
+            // 
+            this.roadIDDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.roadIDDataGridViewTextBoxColumn.DataPropertyName = "roadID";
+            this.roadIDDataGridViewTextBoxColumn.HeaderText = "roadID";
+            this.roadIDDataGridViewTextBoxColumn.Name = "roadIDDataGridViewTextBoxColumn";
+            this.roadIDDataGridViewTextBoxColumn.ReadOnly = true;
+            this.roadIDDataGridViewTextBoxColumn.Width = 64;
+            // 
+            // camTypeDataGridViewTextBoxColumn
+            // 
+            this.camTypeDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.camTypeDataGridViewTextBoxColumn.DataPropertyName = "camType";
+            this.camTypeDataGridViewTextBoxColumn.HeaderText = "camType";
+            this.camTypeDataGridViewTextBoxColumn.Name = "camTypeDataGridViewTextBoxColumn";
+            this.camTypeDataGridViewTextBoxColumn.ReadOnly = true;
+            this.camTypeDataGridViewTextBoxColumn.Width = 76;
+            // 
             // CameraManage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -327,7 +341,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.cameraBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mmdametrobaseDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mmdametrobaseDataSetBindingSource)).EndInit();
-           // ((System.ComponentModel.ISupportInitialize)(this.roadsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.roadsBindingSource)).EndInit();
             this.grpAddEditDel.ResumeLayout(false);
             this.grpAddEditDel.PerformLayout();
             this.ResumeLayout(false);
@@ -344,10 +358,6 @@
         private mmdametrobaseDataSet1 mmdametrobaseDataSet1;
         private System.Windows.Forms.BindingSource cameraBindingSource;
         private mmdametrobaseDataSet1TableAdapters.cameraTableAdapter cameraTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cameraIDDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn camIPDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn roadIDDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn camTypeDataGridViewTextBoxColumn;
         private System.Windows.Forms.GroupBox grpAddEditDel;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
@@ -367,5 +377,9 @@
         private mmdametrobaseDataSet2 mmdametrobaseDataSet2;
         private System.Windows.Forms.BindingSource cameraBindingSource1;
         private mmdametrobaseDataSet2TableAdapters.cameraTableAdapter cameraTableAdapter1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cameraIDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn camIPDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn roadIDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn camTypeDataGridViewTextBoxColumn;
     }
 }

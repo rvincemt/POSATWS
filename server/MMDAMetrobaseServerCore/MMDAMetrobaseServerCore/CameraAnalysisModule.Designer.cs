@@ -13,10 +13,12 @@
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
+
             if (disposing && (components != null))
             {
                 components.Dispose();
             }
+
             base.Dispose(disposing);
         }
 
@@ -33,6 +35,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.imgboxPrev = new Emgu.CV.UI.ImageBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.Time_Label = new System.Windows.Forms.Label();
             this.Frame_lbl = new System.Windows.Forms.Label();
@@ -40,12 +43,11 @@
             this.Video_seek = new System.Windows.Forms.TrackBar();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.imgboxPrev = new Emgu.CV.UI.ImageBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imgboxPrev)).BeginInit();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Video_seek)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgboxPrev)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -95,6 +97,16 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Preview";
             // 
+            // imgboxPrev
+            // 
+            this.imgboxPrev.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.imgboxPrev.Location = new System.Drawing.Point(4, 24);
+            this.imgboxPrev.Name = "imgboxPrev";
+            this.imgboxPrev.Size = new System.Drawing.Size(629, 253);
+            this.imgboxPrev.TabIndex = 2;
+            this.imgboxPrev.TabStop = false;
+            this.imgboxPrev.Click += new System.EventHandler(this.imgboxPrev_Click);
+            // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.Time_Label);
@@ -138,6 +150,7 @@
             this.Codec_lbl.TabIndex = 0;
             this.Codec_lbl.Text = "Codec:";
             this.Codec_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Codec_lbl.Click += new System.EventHandler(this.Codec_lbl_Click);
             // 
             // Video_seek
             // 
@@ -164,16 +177,7 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "groupBox4";
             // 
-            // imgboxPrev
-            // 
-            this.imgboxPrev.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.imgboxPrev.Location = new System.Drawing.Point(4, 24);
-            this.imgboxPrev.Name = "imgboxPrev";
-            this.imgboxPrev.Size = new System.Drawing.Size(629, 253);
-            this.imgboxPrev.TabIndex = 2;
-            this.imgboxPrev.TabStop = false;
-            // 
-            // Form1
+            // CameraAnalysisModule
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -187,14 +191,14 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
-            this.Name = "Form1";
+            this.Name = "CameraAnalysisModule";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "VideoCapture";
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.imgboxPrev)).EndInit();
             this.groupBox3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.Video_seek)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgboxPrev)).EndInit();
             this.ResumeLayout(false);
 
         }

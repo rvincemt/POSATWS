@@ -10,7 +10,7 @@ using System.Threading;
 using Emgu.CV;
 using Emgu.CV.Structure;
 using Emgu.Util;
-
+using Emgu.CV.Cvb;
 namespace WindowsFormsApplication1
 {
     public partial class CameraAnalysisModule : Form
@@ -167,6 +167,16 @@ namespace WindowsFormsApplication1
         private void Video_seek_Scroll(object sender, EventArgs e)
         {
             
+        }
+
+        private void Codec_lbl_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void imgboxPrev_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
