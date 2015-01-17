@@ -10,14 +10,18 @@ using System.Threading;
 using Emgu.CV;
 using Emgu.CV.Structure;
 using Emgu.Util;
-using Emgu.CV.Cvb;
+using Emgu.CV.CvEnum;
+using Emgu.CV.VideoSurveillance;
+
 namespace WindowsFormsApplication1
 {
     public partial class CameraAnalysisModule : Form
     {
         private Capture _capture = null;
         Image<Bgr, Byte> frame;
-             
+        private static MCvFont _font = new MCvFont(Emgu.CV.CvEnum.FONT.CV_FONT_HERSHEY_SIMPLEX, 1.0, 1.0);
+        private static BlobTrackerAuto<Bgr> _tracker;
+        private static IBGFGDetector<Bgr> _detector;     
         int cam = 0;
         double webcam_frm_cnt = 0;
         double FrameRate = 0;
@@ -43,10 +47,14 @@ namespace WindowsFormsApplication1
             {
                 Framesno = _capture.GetCaptureProperty(Emgu.CV.CvEnum.CAP_PROP.CV_CAP_PROP_POS_FRAMES);
                 frame = _capture.QueryFrame();
+                frame._SmoothGaussian(3); //filter out noises
+                _detector.Update(frame);
+                Image<Gray, Byte> forgroundMask = _detector.ForegroundMask;
+                _tracker.Process(frame, forgroundMask);
 
                 if (frame != null)
                 {
-                    imgboxPrev.Image = frame;
+                    imgboxPrev.Image = forgroundMask;
                     if (cam == 0)
                     {
                         Video_seek.Value = (int)(Framesno);
@@ -64,6 +72,12 @@ namespace WindowsFormsApplication1
                     {
                         Frame_lbl.Text = "Frame: " + (webcam_frm_cnt++).ToString();
                     }
+
+                }
+                foreach (MCvBlob blob in _tracker)
+                {
+                    frame.Draw((Rectangle)blob, new Bgr(255.0, 255.0, 255.0), 2);
+                    frame.Draw(blob.ID.ToString(), ref _font, Point.Round(blob.Center), new Bgr(255.0, 255.0, 255.0));
                 }
             }
             catch (Exception ex)
@@ -100,6 +114,10 @@ namespace WindowsFormsApplication1
                             cam = 1;
                             Video_seek.Value = 0;
 
+                            _detector = new FGDetector<Bgr>(FORGROUND_DETECTOR_TYPE.FGD);
+
+                            _tracker = new BlobTrackerAuto<Bgr>();
+
                             Application.Idle += ProcessFrame;
                             button1.Text = "Stop";
                             comboBox1.Enabled = false;
@@ -132,6 +150,11 @@ namespace WindowsFormsApplication1
                                 cam = 0;
                                 Video_seek.Minimum = 0;
                                 Video_seek.Maximum = (int)TotalFrames - 1;
+
+                                _detector = new FGDetector<Bgr>(FORGROUND_DETECTOR_TYPE.FGD);
+
+                                _tracker = new BlobTrackerAuto<Bgr>();
+
                                 Application.Idle += ProcessFrame;
                                 button1.Text = "Stop";
                                 comboBox1.Enabled = false;
