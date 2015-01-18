@@ -194,6 +194,7 @@
             this.Name = "CameraAnalysisModule";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "VideoCapture";
+            this.Load += new System.EventHandler(this.CameraAnalysisModule_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.imgboxPrev)).EndInit();
