@@ -1,0 +1,16 @@
+diff a/sensor/sensorSketch/sensorSketch.ino b/sensor/sensorSketch/sensorSketch.ino	(rejected hunks)
+@@ -23,6 +23,14 @@
+ String telemetryType = "tm";
+ String statusType = "st";
+ String commandType = "cm";
++
++//TeamSpeak
++byte server[]  = { 184, 106, 153, 149 }; // IP Address for the ThingSpeak API
++String writeAPIKey = "PDK34R7M5G3LYX4Z";    // Write API Key for a ThingSpeak Channel
++const int updateInterval = 30000;        // Time interval in milliseconds to update ThingSpeak   
++Client client(server, 80);
++
++
+ void setup()
+ {
+  powerUp();

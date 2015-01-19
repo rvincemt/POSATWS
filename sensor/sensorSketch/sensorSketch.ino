@@ -1,15 +1,20 @@
 
 #include <LiquidCrystal.h>
-#define softPower 2;
-#define lcd4 4;
-#define lcd5 5;
-#define lcd6 6;
-#define lcd7 7;
-#define lcd8 8;
-#define lcd9 9;
-#define sensorTrig 11
-#define sensorEcho 12
-#define sensorRain A1
+#define softPower 2
+#define lcd4 4
+#define lcd5 5
+#define lcd6 6
+#define lcd7 7
+#define lcd8 8
+#define lcd9 9
+#define lcd10 10
+#define eth11 11
+#define eth12 12
+#define eth13 13
+#define lcdKey A0
+#define floodTrig 19
+#define floodEcho 20
+#define sensorRain 21
 
 
 unsigned char buffer[64]; 
@@ -17,12 +22,15 @@ int count=0;
 String response="";
 int incomingByte = 0;
 String serverNumber;
-int sensorValue = 0;
-boolean raining = 0;
+long sensorValue = 0;
+boolean rainValue = 0;
 String passphrase = "";
 String telemetryType = "tm";
 String statusType = "st";
 String commandType = "cm";
+int count1= 0;
+String floodData = " ";
+String rainData = " ";
 
 //TeamSpeak
 byte server[]  = { 184, 106, 153, 149 }; // IP Address for the ThingSpeak API
@@ -36,13 +44,14 @@ void setup()
  powerUp();
  Serial1.begin(19200);                 
  Serial.begin(19200);  
- pinMode(sensorTrig, OUTPUT);
-  pinMode(sensorEcho, INPUT);  
+ pinMode(floodTrig,OUTPUT);
+  pinMode(floodEcho, INPUT);  
 
 }
 void loop()
 {
- if (Serial1.available())              
+  
+  if (Serial1.available())              
  {
    while(Serial1.available())           
    {
@@ -56,7 +65,16 @@ void loop()
  if (Serial.available())            
    Serial1.write(Serial.read());      
    
-  
+sensorValue = getSensorData();
+rainValue = getRainStatus();
+floodData = String(sensorValue, DEC);
+rainData  = String(rainValue, DEC);
+Serial.println(floodData);
+
+connectGPRS();
+sendToThingSpeak("1=" + rainData + "&2=" + floodData);
+delay(30000);
+
 }
 void clearBufferArray()              
 {
@@ -104,13 +122,13 @@ long getSensorData(){
   long sData[5];
   while(loopCount < 5){
   long duration, distance;
-  digitalWrite(sensorTrig, LOW); 
+  digitalWrite(floodTrig, LOW); 
   delayMicroseconds(2); 
-  digitalWrite(sensorTrig, HIGH);
+  digitalWrite(floodTrig, HIGH);
 
   delayMicroseconds(10); 
-  digitalWrite(sensorTrig, LOW);
-  duration = pulseIn(sensorEcho, HIGH);
+  digitalWrite(floodTrig, LOW);
+  duration = pulseIn(floodEcho, HIGH);
   distance = (duration/2) / 29.1;
   
   if (distance >= 200 || distance <= 0){
@@ -158,31 +176,36 @@ if(getResponse == "OK"){
 }
   
 }
-void sendToThingSpeak(String tmData)
-{
-  
- Serial1.println("AT+CGATT?");
+
+void connectGPRS(){
+  Serial1.println("AT+CGATT?");
  delay(100);
  ViewSerialResponse();
- Serial1.println("AT+CSTT=\"CMNET\"");//start task and setting the APN,
+ Serial1.println("AT+CSTT=\"http.globe.com.ph\"");
  delay(1000);
  ViewSerialResponse();
- Serial1.println("AT+CIICR");//bring up wireless connection
+ Serial1.println("AT+CIICR");
  delay(300);
  ViewSerialResponse();
- Serial1.println("AT+CIFSR");//get local IP adress
+ Serial1.println("AT+CIFSR");
  delay(2000);
  ViewSerialResponse();
  Serial1.println("AT+CIPSPRT=0");
  delay(3000);
   ViewSerialResponse();
- Serial1.println("AT+CIPSTART=\"tcp\",\"api.thingspeak.com\",\"80\"");//start up the connection
+ Serial1.println("AT+CIPSTART=\"tcp\",\"api.thingspeak.com\",\"80\"");
  delay(2000);
  ViewSerialResponse();
- Serial1.println("AT+CIPSEND");//begin send data to remote server
+  
+}
+void sendToThingSpeak(String tmData)
+{
+  
+ //send to Thingspeak channel, field 1
+ Serial1.println("AT+CIPSEND");
  delay(4000);
  ViewSerialResponse();
- Serial1.print("POST /update HTTP/1.1\n");//here is the feed you apply from pachube
+ Serial1.print("POST /update HTTP/1.1\n");
  delay(500);
  ViewSerialResponse();
  Serial1.print("Host: api.thingspeak.com\n");
@@ -194,33 +217,26 @@ void sendToThingSpeak(String tmData)
  Serial1.print("X-THINGSPEAKAPIKEY: "+writeAPIKey+"\n");
  delay(500);
  ViewSerialResponse();
- Serial1.print("Content-Type: application/x-www-form-urlencoded\n");
+ Serial1.print("Content -Type: application/x-www-form-urlencoded\n");
  delay(500);
  ViewSerialResponse();
  Serial1.print("Content-Length: ");
  delay(500);
  ViewSerialResponse();
- Serial1.println(tmData.length());
+ Serial1.print(tmData.length());
  delay(500);
   ViewSerialResponse();
-  Serial1.println("\n\n");
+  Serial1.print("\n\n");
  delay(500);
  ViewSerialResponse();
-  Serial1.println(tmData);
+  Serial1.print(tmData);
  delay(500);
  ViewSerialResponse();
- 
-
-    
-
-
- 
-
- Serial1.println((char)26);//sending
- delay(5000);//waitting for reply, important! the time is base on the condition of internet 
+ Serial1.println((char)26);
+ delay(10000); 
  Serial1.println();
  ViewSerialResponse();
- Serial1.println("AT+CIPCLOSE");//close the connection
+ Serial1.println("AT+CIPCLOSE");
  delay(100);
  ViewSerialResponse();
 }
@@ -229,3 +245,7 @@ void ViewSerialResponse()
  while(Serial1.available()!=0)
    Serial.write(Serial1.read());
 }
+boolean getRainStatus(){
+  
+}
+
