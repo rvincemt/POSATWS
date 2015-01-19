@@ -1,5 +1,15 @@
+#include <Dhcp.h>
+#include <Dns.h>
+#include <Ethernet.h>
+#include <EthernetClient.h>
+#include <EthernetServer.h>
+#include <EthernetUdp.h>
+#include <util.h>
+#include <SPI.h>
 
 #include <LiquidCrystal.h>
+#include <SD.h>
+
 #define softPower 2
 #define lcd4 4
 #define lcd5 5
@@ -31,7 +41,7 @@ String commandType = "cm";
 int count1= 0;
 String floodData = " ";
 String rainData = " ";
-
+long originalHeight = 0;
 //TeamSpeak
 byte server[]  = { 184, 106, 153, 149 }; // IP Address for the ThingSpeak API
 String writeAPIKey = "PDK34R7M5G3LYX4Z";    // Write API Key for a ThingSpeak Channel
@@ -65,7 +75,7 @@ void loop()
  if (Serial.available())            
    Serial1.write(Serial.read());      
    
-sensorValue = getSensorData();
+sensorValue = originalHeight - getSensorData();
 rainValue = getRainStatus();
 floodData = String(sensorValue, DEC);
 rainData  = String(rainValue, DEC);
