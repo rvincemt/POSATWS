@@ -5,6 +5,8 @@ VisualStudioVersion = 12.0.30501.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MMDA Traffic Analyzer", "MMDAMetrobaseServerCore\MMDA Traffic Analyzer.csproj", "{2BF18E85-1897-48E6-800F-2EA2FC31C1C9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "trafficInfoDisplay", "trafficInfoDisplay\trafficInfoDisplay.csproj", "{E130E4A0-AFE8-4D05-B03F-F8C4DF13BA0E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{2BF18E85-1897-48E6-800F-2EA2FC31C1C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2BF18E85-1897-48E6-800F-2EA2FC31C1C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2BF18E85-1897-48E6-800F-2EA2FC31C1C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E130E4A0-AFE8-4D05-B03F-F8C4DF13BA0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E130E4A0-AFE8-4D05-B03F-F8C4DF13BA0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E130E4A0-AFE8-4D05-B03F-F8C4DF13BA0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E130E4A0-AFE8-4D05-B03F-F8C4DF13BA0E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

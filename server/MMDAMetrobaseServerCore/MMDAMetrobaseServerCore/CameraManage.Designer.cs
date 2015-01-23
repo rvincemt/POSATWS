@@ -341,7 +341,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.cameraBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mmdametrobaseDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mmdametrobaseDataSetBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.roadsBindingSource)).EndInit();
+//            ((System.ComponentModel.ISupportInitialize)(this.roadsBindingSource)).EndInit();
             this.grpAddEditDel.ResumeLayout(false);
             this.grpAddEditDel.PerformLayout();
             this.ResumeLayout(false);
