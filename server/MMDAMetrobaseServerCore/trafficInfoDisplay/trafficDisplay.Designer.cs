@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.picAdBox2 = new System.Windows.Forms.PictureBox();
             this.picAdBox1 = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
@@ -39,6 +40,10 @@
             this.lblVal1 = new System.Windows.Forms.Label();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.lblTime = new System.Windows.Forms.Label();
+            this.timeTraffic = new System.Windows.Forms.Timer(this.components);
+            this.timeWeather = new System.Windows.Forms.Timer(this.components);
+            this.timeAdvisory = new System.Windows.Forms.Timer(this.components);
+            this.delay = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.picAdBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picAdBox1)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
@@ -187,6 +192,11 @@
             this.lblTime.Text = "8:88 PM";
             this.lblTime.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // timeTraffic
+            // 
+            this.timeTraffic.Interval = 1000;
+            this.timeTraffic.Tick += new System.EventHandler(this.timeTraffic_Tick);
+            // 
             // trafficDisplay
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -226,8 +236,12 @@
        // private mmdametrobaseDataSet mmdametrobaseDataSet;
         private System.Windows.Forms.BindingSource rdliveBindingSource;
         //private mmdametrobaseDataSetTableAdapters.rdliveTableAdapter rdliveTableAdapter;
-        private System.Windows.Forms.BindingSource rdliveBindingSource2;
-        private System.Windows.Forms.BindingSource rdliveBindingSource1;
+        //private System.Windows.Forms.BindingSource rdliveBindingSource2;
+       // private System.Windows.Forms.BindingSource rdliveBindingSource1;
+        private System.Windows.Forms.Timer timeTraffic;
+        private System.Windows.Forms.Timer timeWeather;
+        private System.Windows.Forms.Timer timeAdvisory;
+        private System.Windows.Forms.Timer delay;
     }
 }
 

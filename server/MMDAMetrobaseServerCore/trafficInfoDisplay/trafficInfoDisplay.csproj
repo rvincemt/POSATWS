@@ -49,7 +49,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Logic.cs" />
     <Compile Include="trafficDisplay.cs">
       <SubType>Form</SubType>
     </Compile>

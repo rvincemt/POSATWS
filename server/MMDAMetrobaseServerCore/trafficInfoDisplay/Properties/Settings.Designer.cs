@@ -25,7 +25,7 @@ namespace trafficInfoDisplay.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        [global::System.Configuration.DefaultSettingValueAttribute("127.0.0.1")]
         public string DBServerIP {
             get {
                 return ((string)(this["DBServerIP"]));
@@ -37,7 +37,7 @@ namespace trafficInfoDisplay.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        [global::System.Configuration.DefaultSettingValueAttribute("root")]
         public string DBServerUID {
             get {
                 return ((string)(this["DBServerUID"]));
@@ -49,7 +49,7 @@ namespace trafficInfoDisplay.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        [global::System.Configuration.DefaultSettingValueAttribute("mmdametrobase")]
         public string DBServerPWD {
             get {
                 return ((string)(this["DBServerPWD"]));
@@ -61,7 +61,7 @@ namespace trafficInfoDisplay.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        [global::System.Configuration.DefaultSettingValueAttribute("mmdametrobase")]
         public string DBServerName {
             get {
                 return ((string)(this["DBServerName"]));
@@ -85,7 +85,7 @@ namespace trafficInfoDisplay.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        [global::System.Configuration.DefaultSettingValueAttribute("A10NB")]
         public string RoadID {
             get {
                 return ((string)(this["RoadID"]));
@@ -187,6 +187,126 @@ namespace trafficInfoDisplay.Properties {
             }
             set {
                 this["roadID3"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string trafficStat1 {
+            get {
+                return ((string)(this["trafficStat1"]));
+            }
+            set {
+                this["trafficStat1"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string trafficStat2 {
+            get {
+                return ((string)(this["trafficStat2"]));
+            }
+            set {
+                this["trafficStat2"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string trafficStat3 {
+            get {
+                return ((string)(this["trafficStat3"]));
+            }
+            set {
+                this["trafficStat3"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string weatherStat1 {
+            get {
+                return ((string)(this["weatherStat1"]));
+            }
+            set {
+                this["weatherStat1"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string weatherStat2 {
+            get {
+                return ((string)(this["weatherStat2"]));
+            }
+            set {
+                this["weatherStat2"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string weatherStat3 {
+            get {
+                return ((string)(this["weatherStat3"]));
+            }
+            set {
+                this["weatherStat3"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string advisory1 {
+            get {
+                return ((string)(this["advisory1"]));
+            }
+            set {
+                this["advisory1"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string advisory2 {
+            get {
+                return ((string)(this["advisory2"]));
+            }
+            set {
+                this["advisory2"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string advisoryID {
+            get {
+                return ((string)(this["advisoryID"]));
+            }
+            set {
+                this["advisoryID"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string advertID {
+            get {
+                return ((string)(this["advertID"]));
+            }
+            set {
+                this["advertID"] = value;
             }
         }
     }
