@@ -17,10 +17,12 @@ namespace WindowsFormsApplication1
 {
     public partial class CameraAnalysisModule : Form
     {
-        private Capture _capture = null;
-        Image<Bgr, Byte> frame;
-        
-        private HaarCascade haar;          
+        private static MCvFont _font = new MCvFont(Emgu.CV.CvEnum.FONT.CV_FONT_HERSHEY_SIMPLEX, 1.0, 1.0);
+      private static Capture _capture;
+      private static BlobTrackerAuto<Bgr> _tracker;
+      private static IBGFGDetector<Bgr> _detector;
+
+           
         int cam = 0;
         double webcam_frm_cnt = 0;
         double FrameRate = 0;
@@ -39,22 +41,18 @@ namespace WindowsFormsApplication1
             if (_capture != null)
                 _capture.Dispose();
         }
-
+        public int blobCnt = 0;
         private void ProcessFrame(object sender, EventArgs arg)
         {
             try
             {
                 Framesno = _capture.GetCaptureProperty(Emgu.CV.CvEnum.CAP_PROP.CV_CAP_PROP_POS_FRAMES);
-                frame = _capture.QueryFrame();
+                Image<Bgr, Byte> frame = _capture.QueryFrame();
                 frame._SmoothGaussian(3); //filter out noises
-               
                
 
                 if (frame != null)
                 {
-                    Image<Gray, byte> grayframe = frame.Convert<Gray, byte>();
-                     var cars =  grayframe.DetectHaarCascade(haar, 1.4, 4,
-                                        HAAR_DETECTION_TYPE.DO_CANNY_PRUNING, new Size(25, 25))[0];
                     
                     imgboxPrev.Image = frame;
                     if (cam == 0)
@@ -74,8 +72,20 @@ namespace WindowsFormsApplication1
                     {
                         Frame_lbl.Text = "Frame: " + (webcam_frm_cnt++).ToString();
                     }
+                    _detector.Update(frame);
+                     Image<Gray, Byte> forgroundMask = _detector.ForegroundMask;
+               
 
-                    foreach (var car in cars)
+                    _tracker.Process(frame, forgroundMask);
+
+                    foreach (MCvBlob blob in _tracker)
+                    {
+                        frame.Draw((Rectangle)blob, new Bgr(255.0, 255.0, 255.0), 2);
+                        frame.Draw(blob.ID.ToString(), ref _font, Point.Round(blob.Center), new Bgr(255.0, 255.0, 255.0));
+                        blobCnt++;
+                    }
+
+                    
                 }
                
             }
@@ -113,7 +123,9 @@ namespace WindowsFormsApplication1
                             cam = 1;
                             Video_seek.Value = 0;
 
-                            
+                            _detector = new FGDetector<Bgr>(FORGROUND_DETECTOR_TYPE.FGD);
+
+                            _tracker = new BlobTrackerAuto<Bgr>();
 
                             Application.Idle += ProcessFrame;
                             button1.Text = "Stop";
@@ -137,6 +149,7 @@ namespace WindowsFormsApplication1
                             {
                                 _capture = null;
                                 _capture = new Capture(openFileDialog1.FileName);
+                                
                                 _capture.SetCaptureProperty(Emgu.CV.CvEnum.CAP_PROP.CV_CAP_PROP_FRAME_HEIGHT, 240);
                                 _capture.SetCaptureProperty(Emgu.CV.CvEnum.CAP_PROP.CV_CAP_PROP_FRAME_WIDTH, 320);
                                 FrameRate = _capture.GetCaptureProperty(Emgu.CV.CvEnum.CAP_PROP.CV_CAP_PROP_FPS);
@@ -199,7 +212,7 @@ namespace WindowsFormsApplication1
 
         private void CameraAnalysisModule_Load(object sender, EventArgs e)
         {
-            haar = new HaarCascade("haarCascade/cars3.xml");
+            
         }
     }
 }

@@ -34,7 +34,6 @@
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.btnTableView = new System.Windows.Forms.Button();
-            this.btnFloodMap = new System.Windows.Forms.Button();
             this.btnTrafficMap = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -81,7 +80,6 @@
             // 
             this.groupBox1.Controls.Add(this.groupBox2);
             this.groupBox1.Controls.Add(this.btnTableView);
-            this.groupBox1.Controls.Add(this.btnFloodMap);
             this.groupBox1.Controls.Add(this.btnTrafficMap);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Left;
             this.groupBox1.Location = new System.Drawing.Point(0, 24);
@@ -142,16 +140,6 @@
             this.btnTableView.UseVisualStyleBackColor = true;
             this.btnTableView.Click += new System.EventHandler(this.btnTableView_Click);
             // 
-            // btnFloodMap
-            // 
-            this.btnFloodMap.Location = new System.Drawing.Point(7, 147);
-            this.btnFloodMap.Name = "btnFloodMap";
-            this.btnFloodMap.Size = new System.Drawing.Size(187, 46);
-            this.btnFloodMap.TabIndex = 1;
-            this.btnFloodMap.Text = "Flood Map ";
-            this.btnFloodMap.UseVisualStyleBackColor = true;
-            this.btnFloodMap.Click += new System.EventHandler(this.btnFloodMap_Click);
-            // 
             // btnTrafficMap
             // 
             this.btnTrafficMap.Location = new System.Drawing.Point(7, 43);
@@ -199,7 +187,6 @@
             this.connectionsToolStripMenuItem.Name = "connectionsToolStripMenuItem";
             this.connectionsToolStripMenuItem.Size = new System.Drawing.Size(86, 20);
             this.connectionsToolStripMenuItem.Text = "Connections";
-          //  this.connectionsToolStripMenuItem.Click += new System.EventHandler(this.connectionsToolStripMenuItem_Click);
             // 
             // cameraToolStripMenuItem
             // 
@@ -209,7 +196,7 @@
             this.connectionsToolStripMenuItem2,
             this.xToolStripMenuItem});
             this.cameraToolStripMenuItem.Name = "cameraToolStripMenuItem";
-            this.cameraToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.cameraToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.cameraToolStripMenuItem.Text = "Camera";
             // 
             // Menu_Cam_Manage
@@ -244,7 +231,7 @@
             this.analyzerToolStripMenuItem1,
             this.connectionsToolStripMenuItem1});
             this.sensorToolStripMenuItem.Name = "sensorToolStripMenuItem";
-            this.sensorToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.sensorToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.sensorToolStripMenuItem.Text = "Sensor";
             // 
             // manageSensorsToolStripMenuItem
@@ -272,7 +259,7 @@
             this.manageConnectionsToolStripMenuItem,
             this.warningNotifierToolStripMenuItem});
             this.roadDisplaysToolStripMenuItem.Name = "roadDisplaysToolStripMenuItem";
-            this.roadDisplaysToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.roadDisplaysToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.roadDisplaysToolStripMenuItem.Text = "Road Displays";
             // 
             // manageConnectionsToolStripMenuItem
@@ -293,7 +280,7 @@
             this.roadsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menu_manage_road});
             this.roadsToolStripMenuItem.Name = "roadsToolStripMenuItem";
-            this.roadsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.roadsToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.roadsToolStripMenuItem.Text = "Roads";
             // 
             // menu_manage_road
@@ -367,7 +354,7 @@
             this.webBrowser1.Name = "webBrowser1";
             this.webBrowser1.Size = new System.Drawing.Size(879, 600);
             this.webBrowser1.TabIndex = 2;
-            this.webBrowser1.Url = new System.Uri("http://google.com", System.UriKind.Absolute);
+            this.webBrowser1.Url = new System.Uri("http://thingsofthe.net", System.UriKind.Absolute);
             // 
             // statusStrip1
             // 
@@ -476,7 +463,6 @@
         private System.Windows.Forms.ToolStripMenuItem supportToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
         private System.Windows.Forms.Button btnTableView;
-        private System.Windows.Forms.Button btnFloodMap;
         private System.Windows.Forms.Button btnTrafficMap;
         private System.Windows.Forms.ToolStripMenuItem connectionsToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem connectionsToolStripMenuItem2;
