@@ -1,31 +1,13 @@
-#include <Dhcp.h>
-#include <Dns.h>
-#include <Ethernet.h>
-#include <EthernetClient.h>
-#include <EthernetServer.h>
-#include <EthernetUdp.h>
-#include <util.h>
-#include <SPI.h>
+
 
 #include <LiquidCrystal.h>
-#include <SD.h>
 
 #define softPower 2
-#define lcd4 4
-#define lcd5 5
-#define lcd6 6
-#define lcd7 7
-#define lcd8 8
-#define lcd9 9
-#define lcd10 10
-#define eth11 11
-#define eth12 12
-#define eth13 13
-#define lcdKey A0
-#define floodTrig 19
-#define floodEcho 20
-#define sensorRain 21
-
+#define floodTrig 5
+#define floodEcho 6
+#define sensorRain 7
+#define powerLED 3
+#define dataLED 4
 
 unsigned char buffer[64]; 
 int count=0;     
@@ -56,11 +38,13 @@ void setup()
  Serial.begin(19200);  
  pinMode(floodTrig,OUTPUT);
   pinMode(floodEcho, INPUT);  
+pinMode(powerLED, OUTPUT);
+pinMode(dataLED, OUTPUT);
 
 }
 void loop()
 {
-  
+  digitalWrite(13, HIGH);
   if (Serial1.available())              
  {
    while(Serial1.available())           
@@ -83,6 +67,9 @@ Serial.println(floodData);
 
 connectGPRS();
 sendToThingSpeak("1=" + rainData + "&2=" + floodData);
+digitalWrite(dataLED,HIGH);
+delay(1000);
+digitalWrite(dataLED,LOW);
 delay(30000);
 
 }
